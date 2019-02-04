@@ -3,17 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reading Light</title>
+  <title>Roku Remote</title>
   <meta name="description" content="A tiny no-frills screen light progressive web app based on the WakeLock API.">
   <meta name="theme-color" content="#f1f1f1">
   <link rel="icon" href="/images/readinglight.png">
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div id="controls">
-    <input type="color" id="color" value="#ff69b4"> <input type="range" id="lux" min="0" max="100" value="50">
+
+  <div id="root">
+
+    <!-- Top App Bar -->
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a class="mdc-top-app-bar__navigation-icon" href="javascript:void(0)">
+            <i class="material-icons">menu</i>
+          </a>
+          <a class="mdc-top-app-bar__title catalog-title" href="/" target="_blank" style="color: inherit;">Roku Remote</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="demo-content mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+      <!-- Drawer -->
+      <aside class="mdc-drawer mdc-drawer--dismissible demo-drawer">
+        <nav class="mdc-drawer__drawer">
+          <nav class="mdc-drawer__content mdc-list-group">
+            <div id="icon-with-text-demo" class="mdc-list">
+              <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+              </a>
+              <a class="mdc-list-item demo-drawer-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
+              </a>
+              <a class="mdc-list-item demo-drawer-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Sent Mail
+              </a>
+              <a class="mdc-list-item demo-drawer-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts
+              </a>
+            </div>
+
+            <hr class="mdc-list-divider">
+
+            <div class="mdc-list">
+              <a class="mdc-list-item demo-drawer-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>All Mail
+              </a>
+              <a class="mdc-list-item demo-drawer-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>Trash
+              </a>
+              <a class="mdc-list-item demo-drawer-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>Spam
+              </a>
+            </div>
+          </nav>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <main class="mdc-drawer-app-content main-content">
+
+        <div class="mdc-text-field">
+          <input type="text" id="ip-address" value="192.168.1.72" class="mdc-text-field__input">
+          <label class="mdc-floating-label" for="my-text-field">IP Address</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+
+        <button type="button" class="foo-button mdc-button ripple-demo-box--primary mdc-ripple-upgraded" id="up" value="Up">Up</button>
+        <button type="button" class="foo-button mdc-button" id="down" value="Down">Down</button>
+        <button type="button" class="foo-button mdc-button" id="left" value="Left">Left</button>
+        <button type="button" class="foo-button mdc-button" id="right" value="Right">Right</button>
+        <button type="button" class="foo-button mdc-button" id="select" value="Select">Select</button>
+                  
+      </main>
+    </div>
+
   </div>
-  <script src="index.js"></script>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
