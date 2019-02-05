@@ -33,34 +33,11 @@
       <aside class="mdc-drawer mdc-drawer--dismissible demo-drawer">
         <nav class="mdc-drawer__drawer">
           <nav class="mdc-drawer__content mdc-list-group">
-            <div id="icon-with-text-demo" class="mdc-list">
-              <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
-              </a>
-              <a class="mdc-list-item demo-drawer-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
-              </a>
-              <a class="mdc-list-item demo-drawer-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Sent Mail
-              </a>
-              <a class="mdc-list-item demo-drawer-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts
-              </a>
-            </div>
-
-            <hr class="mdc-list-divider">
-
-            <div class="mdc-list">
-              <a class="mdc-list-item demo-drawer-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>All Mail
-              </a>
-              <a class="mdc-list-item demo-drawer-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>Trash
-              </a>
-              <a class="mdc-list-item demo-drawer-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>Spam
-              </a>
-            </div>
+              <div class="mdc-text-field" style="width:100%">
+                <input type="text" id="ip-address" value="192.168.1.72" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="my-text-field">IP Address</label>
+                <div class="mdc-line-ripple"></div>
+              </div>           
           </nav>
         </nav>
       </aside>
@@ -68,18 +45,78 @@
       <!-- Content -->
       <main class="mdc-drawer-app-content main-content">
 
-        <div class="mdc-text-field">
-          <input type="text" id="ip-address" value="192.168.1.72" class="mdc-text-field__input">
-          <label class="mdc-floating-label" for="my-text-field">IP Address</label>
-          <div class="mdc-line-ripple"></div>
-        </div>
+          <div class="mdc-layout-grid">
 
-        <button type="button" class="foo-button mdc-button ripple-demo-box--primary mdc-ripple-upgraded" id="up" value="Up">Up</button>
-        <button type="button" class="foo-button mdc-button" id="down" value="Down">Down</button>
-        <button type="button" class="foo-button mdc-button" id="left" value="Left">Left</button>
-        <button type="button" class="foo-button mdc-button" id="right" value="Right">Right</button>
-        <button type="button" class="foo-button mdc-button" id="select" value="Select">Select</button>
-                  
+            <!-- Top Row -->
+              <div class="mdc-layout-grid__inner">
+                  <div class="mdc-layout-grid__cell">
+                      <div class="mdc-card demo-card">
+                          <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                              <button type="button" class="foo-button mdc-button" id="left" value="Left">Left</button>
+                            </div>
+                        </div>
+                      </div>
+                  <div class="mdc-layout-grid__cell">
+                    <div class="mdc-card demo-card">
+                      <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                          <button type="button" class="foo-button mdc-button" id="home" value="Home">Home</button>
+                        </div>
+                    </div>
+                  </div>
+                    
+                </div>
+
+
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell"></div>
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card demo-card">
+                  <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                      <button type="button" class="foo-button mdc-button" id="up" value="Up">Up</button>
+                    </div>
+                </div>
+              </div>
+                
+              <div class="mdc-layout-grid__cell"></div>
+            </div>
+
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card demo-card">
+                  <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                      <button type="button" class="foo-button mdc-button" id="left" value="Left">Left</button>
+                    </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell">
+                  <div class="mdc-card demo-card">
+                    <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                        <button type="button" class="foo-button mdc-button" id="select" value="Select">OK</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell">
+                  <div class="mdc-card demo-card">
+                    <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                        <button type="button" class="foo-button mdc-button" id="right" value="Right">Right</button>
+                      </div>
+                  </div>
+                </div>              
+            </div>
+
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell"></div>
+              <div class="mdc-layout-grid__cell">
+                <div class="mdc-card demo-card">
+                  <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                      <button type="button" class="foo-button mdc-button" id="down" value="Down">Down</button>
+                    </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell"></div>
+            </div>
+          </div>
+
       </main>
     </div>
 
