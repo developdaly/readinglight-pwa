@@ -1,5 +1,5 @@
 const version = 2018122101;
-const cachePrefix = 'readinglight-';
+const cachePrefix = 'rokuremote-';
 const staticCacheName = `${cachePrefix}static-${version}`;
 const expectedCaches = [staticCacheName];
 
