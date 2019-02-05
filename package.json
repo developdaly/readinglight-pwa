@@ -1,15 +1,15 @@
 {
-  "name": "speedometer",
-  "description": "Simple speedometer progressive web app based on Geolocation API and AmbientLightSensor API",
+  "name": "rokuremote",
+  "description": "A progressive web application for a web-based Roku remote.",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Justin Ribeiro <justin@justinribeiro.com>",
+  "author": "Patrick Daly <patrick@developdaly.com>",
   "bugs": {
-    "url": "https://github.com/justinribeiro/speedometer-pwa/issues"
+    "url": "https://github.com/developdaly/remote/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:justinribeiro/speedometer-pwa.git"
+    "url": "git@github.com:developdaly/remote.git"
   },
   "license": "MIT",
   "scripts": {
