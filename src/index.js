@@ -1,4 +1,9 @@
-'use strict';
+/*jshint esversion: 6 */
+
+(function () {
+  'use strict';
+   //the rest of the function
+}());
 
 // Instantiate MDC Drawer
 const drawerEl = document.querySelector('.mdc-drawer');

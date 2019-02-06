@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const version = 2018122101;
 const cachePrefix = 'rokuremote-';
 const staticCacheName = `${cachePrefix}static-${version}`;
