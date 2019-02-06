@@ -48,73 +48,123 @@
           <div class="mdc-layout-grid">
 
             <!-- Top Row -->
-              <div class="mdc-layout-grid__inner">
-                  <div class="mdc-layout-grid__cell">
-                      <div class="mdc-card demo-card">
-                          <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
-                              <button type="button" class="foo-button mdc-button" id="left" value="Left">Left</button>
-                            </div>
-                        </div>
+            <div class="mdc-layout-grid__inner" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                  <div class="mdc-card demo-card">
+                    <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                        <button type="button" class="foo-button mdc-button" id="left" value="Left"><i class="material-icons">arrow_back</i></button>
                       </div>
-                  <div class="mdc-layout-grid__cell">
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
                     <div class="mdc-card demo-card">
                       <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
-                          <button type="button" class="foo-button mdc-button" id="home" value="Home">Home</button>
+                          <button type="button" class="foo-button mdc-button" id="info" value="Info">*</button>
                         </div>
                     </div>
                   </div>
-                    
-                </div>
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                    <div class="mdc-card demo-card">
+                      <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                          <button type="button" class="foo-button mdc-button" id="home" value="Home"><i class="material-icons">home</i></button>
+                        </div>
+                    </div>
+                  </div>              
+              </div>
 
 
-            <div class="mdc-layout-grid__inner">
-              <div class="mdc-layout-grid__cell"></div>
-              <div class="mdc-layout-grid__cell">
+            <div class="mdc-layout-grid__inner" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
                 <div class="mdc-card demo-card">
                   <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
-                      <button type="button" class="foo-button mdc-button" id="up" value="Up">Up</button>
+                      <button type="button" class="foo-button mdc-button" id="up" value="Up"><i class="material-icons">arrow_drop_up</i></button>
                     </div>
                 </div>
               </div>
                 
-              <div class="mdc-layout-grid__cell"></div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
             </div>
 
-            <div class="mdc-layout-grid__inner">
-              <div class="mdc-layout-grid__cell">
+            <div class="mdc-layout-grid__inner" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
                 <div class="mdc-card demo-card">
                   <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
-                      <button type="button" class="foo-button mdc-button" id="left" value="Left">Left</button>
+                      <button type="button" class="foo-button mdc-button" id="left" value="Left"><i class="material-icons">arrow_left</i></button>
                     </div>
                 </div>
               </div>
-              <div class="mdc-layout-grid__cell">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
                   <div class="mdc-card demo-card">
                     <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
                         <button type="button" class="foo-button mdc-button" id="select" value="Select">OK</button>
                       </div>
                   </div>
                 </div>
-                <div class="mdc-layout-grid__cell">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
                   <div class="mdc-card demo-card">
                     <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
-                        <button type="button" class="foo-button mdc-button" id="right" value="Right">Right</button>
+                        <button type="button" class="foo-button mdc-button" id="right" value="Right"><i class="material-icons">arrow_right</i></button>
                       </div>
                   </div>
                 </div>              
             </div>
 
-            <div class="mdc-layout-grid__inner">
-              <div class="mdc-layout-grid__cell"></div>
-              <div class="mdc-layout-grid__cell">
+            <div class="mdc-layout-grid__inner" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
                 <div class="mdc-card demo-card">
                   <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
-                      <button type="button" class="foo-button mdc-button" id="down" value="Down">Down</button>
+                      <button type="button" class="foo-button mdc-button" id="down" value="Down"><i class="material-icons">arrow_drop_down</i></button>
                     </div>
                 </div>
               </div>
-              <div class="mdc-layout-grid__cell"></div>
+              <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1"></div>
             </div>
+
+
+            <div class="mdc-layout-grid__inner" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                  <div class="mdc-card demo-card">
+                    <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                        <button type="button" class="foo-button mdc-button" id="rev" value="Rev"><i class="material-icons">fast_rewind</i></button>
+                      </div>
+                  </div>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                    <div class="mdc-card demo-card">
+                      <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                          <button type="button" class="foo-button mdc-button" id="info" value="Play"><i class="material-icons">play_arrow</i></button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                    <div class="mdc-card demo-card">
+                      <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                          <button type="button" class="foo-button mdc-button" id="fwd" value="Fwd"><i class="material-icons">fast_forward</i></button>
+                        </div>
+                    </div>
+                  </div>              
+              </div>
+
+              <div class="mdc-layout-grid__inner" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                    <div class="mdc-card demo-card">
+                      <div class="mdc-card__primary-action mdc-ripple-upgraded" tabindex="0" style="--mdc-ripple-fg-size:210px; --mdc-ripple-fg-scale:2.34115; --mdc-ripple-fg-translate-start:45.4492px, 178.703px; --mdc-ripple-fg-translate-end:70px, 60.4375px;">
+                          <button type="button" class="foo-button mdc-button" id="instant-replay" value="InstantReplay"><i class="material-icons">replay</i></button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                    </div>              
+                </div>
+
+
+
+
+
           </div>
 
       </main>
