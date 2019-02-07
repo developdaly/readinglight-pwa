@@ -28,14 +28,12 @@ const appOpts = {
     root: document.documentElement,
     ip_address: document.querySelector('#ip-address'),
   },
-  wakeLock: null,
-  color: null,
 };
 
 document.addEventListener('click', (event) => {
 
   postData('http://'+ appOpts.dom.ip_address.value +':8060/keypress/'+ event.target.value)
-    .then(data => console.log(JSON.stringify(data))) // JSON-string from `response.json()` call
+    .then(data => JSON.stringify(data)) // JSON-string from `response.json()` call
     .catch(error => console.error(error));
 
 });
@@ -55,17 +53,6 @@ function postData(url = '', data = {}) {
         referrer: "no-referrer", // no-referrer, *client
         body: JSON.stringify(data), // body data type must match "Content-Type" header
     })
-    .then(response => response.json()); // parses response to JSON
-}
-
-const startWakeLock = () => {
-  try {
-    navigator.getWakeLock('screen').then((wakeLock) => {
-      appOpts.wakeLock = wakeLock.createRequest();
-    });
-  } catch(error) {
-    // no experimental wake lock api build
-  }
 }
 
 const startServiceWorker = () => {
@@ -75,7 +62,6 @@ const startServiceWorker = () => {
 }
 
 const init = () => {
-  startWakeLock();
   startServiceWorker();
 };
 
