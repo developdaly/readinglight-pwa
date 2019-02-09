@@ -1,2 +1,0 @@
-'use strict';const b=["rokuremote-static-2018122101"];addEventListener("install",(a)=>{a.waitUntil((async()=>{await (await caches.open("rokuremote-static-2018122101")).addAll(["./","./images/readinglight.png"]);self.skipWaiting()})())});addEventListener("activate",(a)=>{a.waitUntil((async()=>{for(const a of await caches.keys())a.startsWith("rokuremote-")&&(b.includes(a)||await caches.delete(a))})())});
-addEventListener("fetch",(a)=>{new URL(a.request.url);a.respondWith(caches.match(a.request).then((c)=>c||fetch(a.request)))});
