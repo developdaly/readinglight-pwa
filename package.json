@@ -21,7 +21,7 @@
     "build:inline:js":  "sed -i -e '/<script src=\"index.js\"><\\/script>/{' -e 'a <script>' -e 'r ./dist/index.js' -e 'a </script>' -e 'd}' ./dist/index.html",
     "build:minify": "yarn html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --removeAttributeQuotes --remove-tag-whitespace --removeOptionalTags --minify-css true --output ./dist/index.html ./dist/index.html",
     "build:smaller": "rm -rf ./dist/*.css && rm -rf ./dist/index.js",
-    "dist": "yarn clean && yarn copy && yarn build:js && yarn build:sw && yarn build:inline:css && yarn build:inline:js && yarn build:minify && yarn build:smaller",
+    "dist": "yarn copy && yarn build:js && yarn build:sw && yarn build:inline:css && yarn build:inline:js && yarn build:minify && yarn build:smaller",
     "dist:analytics": "yarn dist && cat ./analytics.txt >> ./dist/index.html"
   },
   "devDependencies": {
